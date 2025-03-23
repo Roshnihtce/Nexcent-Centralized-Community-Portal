@@ -1,0 +1,28 @@
+/*Header Start*/
+header{
+    /*display: flex;*/
+    padding-block: 2rem;
+    background-color:white;
+   /* align-items: center;*
+   /* height: 5.25rem;*/
+    
+}
+/*Header End*/
+header ul{
+    column-gap: var(--gap-16);
+}
+header .nav-item{
+    margin-bottom: 0;
+}
+header .nav-item:last-child{
+    padding-left:calc(var(--gap-22));
+}
+
+.top-panel{
+    padding: 1rem 3rem;
+    border-radius:0;
+}
+.nav{
+    margin-inline: 6.264rem; 
+}
+
