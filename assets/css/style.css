@@ -35,18 +35,36 @@
     --line-height-19: 1.1875rem;
     --line-height-16: 1rem;
     --line-height-13: 0.8125rem;
-    
-/* Margins */
-    --margin-40: 2.5rem;
-    --margin-22: 1.375rem;
-    --margin-16: 1rem;
-    --margin-11: 0.6875rem;
-    --margin-8: 0.5rem;
+    /* Spacing */
+    --space-48: 3rem;
+    --space-40: 2.5rem;
+    --space-24: 1.5rem;
+    --space-16: 1rem;
+    --space-8: 0.5rem;
 
-/* Padding */
-    --padding-block-112: 7rem;
-    --padding-block-100: 6.25rem;
-    --padding-block-66: 4.125rem;
+    /* Line Heights */
+    --line-height-lg: 3rem;
+    --line-height-md: 2rem;
+    --line-height-sm: 1.5rem;
+
+    /* Margins */
+    --margin-lg: 2.5rem;
+    --margin-md: 1.5rem;
+    --margin-sm: 1rem;
+
+    /* Padding */
+    --padding-lg: 4rem;
+    --padding-md: 2rem;
+    --padding-sm: 1rem;
+
+    /* Font Sizes */
+    .text-64 { font-size: 4rem; line-height: 1.3 ; } 
+    .text-36 { font-size: 2.25rem; }
+    .text-28 { font-size: 1.75rem; }
+    .text-20 { font-size: 1.25rem; }
+    .text-16 { font-size: 1rem; }
+    .text-14 { font-size: 0.875rem; }
+
 }
 /* General Styles */
 * {
@@ -56,16 +74,40 @@
 }
 
 body {
-    color: var(--color-text-body);
-    scroll-behavior: smooth;
+    font-family: var(--font-family-primary);
+    color: var(--color-dark-gray);
+    background: var(--color-white);
     line-height: 1.5;
-    font-family: var(--font-family);
-}
+    scroll-behavior: smooth;
+} 
 
 html {
     font-size: 1rem;
     font-family: var(--font-family);
+    line-height: 1.3rem;
 
+}
+/* Typography */
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--font-family);
+    color: var(--color-text-medium-gray);
+}
+
+h1, h2, h3{
+    margin-bottom: 1.62rem;
+    font-weight: 600;
+}
+
+h4, h5, h6, p, li{
+    margin-bottom: 1.25rem;    
+}
+
+:where(h1, h2, h3, h4, h5, h6, p, li):last-child{
+    margin-bottom: 0;
+}
+p {
+    margin-bottom: var(--space-16);
+    color: var(--color-d-gray);
 }
 
 /* Section Titles */
@@ -78,15 +120,13 @@ html {
     font-weight: 600;
     font-family: var(--font-family);
 }
+.text-align-center{
+    text-align: center;
+}
 
-/* Font Sizes */
-.text-44 { font-size: 2.75rem; }
-.text-25 { font-size: 1.5625rem; }
-.text-19 { font-size: 1.1875rem; }
-.text-16 { font-size: 1rem; }
-.text-13 { font-size: 0.8125rem; }
-.text-11 { font-size: 0.6875rem; }
-.text-9  { font-size: 0.5635rem; }
+
+
+
 
 /* List Styles */
 .list-unstyled {
@@ -94,24 +134,18 @@ html {
     padding: 0;
 }
 
-/* Background Colors */
-.bg-gray{
-    background: var(--color-silver);
-}
-.bg-white{
-    background: var(--color-white);
-}
-.bg-text-dark {
-    background: var(--color-black); 
-}
-.bg-footer-black{
-    background: var(--color-neutral-black);
-}
+/* ---------------- Background Colors ---------------- */
+.bg-light-gray { background: var(--color-light-gray); }
+.bg-dark-gray { background: var(--color-d-gray); }
+.bg-black { background: var(--color-neutral-black); }
+.bg-body { background: var(--color-text-body);}
+
 
 /* Container */
 .container {
     max-width: 1160px;
     margin-inline: 6.264rem;
+    padding: 0 var(--space-16);
 }
 
 /* Buttons and Links */
@@ -125,12 +159,15 @@ a {
 .btn {
     display: inline-block;
     padding: 0.5625rem 1.375rem;
-    background-color: var(--color-assent);
+    background: var(--color-assent);
     color: var(--color-white);
     text-align: center;
     line-height: 1rem;
     border-radius: 2px;
     font-weight: 500;
+}
+.btn:hover {
+    background: #388E3C;
 }
 
 /* Utility Classes */
@@ -146,12 +183,10 @@ a {
 .mb-0 {
     margin-bottom: 0; 
 }
-.home-banner{
-    margin-inline: 6.624rem;
-}
-.home-banner .container .left-content{
-    margin-block: 7.013rem;
-}
-.home-banner .container{
-    display: block;
+
+
+/* Images */
+img{
+    max-width: 100%;
+    height: auto;
 }

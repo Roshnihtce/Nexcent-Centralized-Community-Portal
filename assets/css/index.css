@@ -1,11 +1,8 @@
 /*Header Start*/
 header{
-    /*display: flex;*/
     padding-block: 2rem;
     background-color:white;
-   /* align-items: center;*
-   /* height: 5.25rem;*/
-    
+  
 }
 /*Header End*/
 header ul{
@@ -25,4 +22,68 @@ header .nav-item:last-child{
 .nav{
     margin-inline: 6.264rem; 
 }
+/*banner-section*/
+.home-banner .container{
+    display: flex;
+    max-width: 1152px;  
+    gap: 104px;
 
+
+}
+.home-banner .left-content{
+    margin-block: 8rem;
+}
+.home-banner .left-content span{
+    color:var(--color-assent);
+}
+.home-banner .right-content img{
+    margin-block: 6rem;
+}
+
+
+
+/* our clients*/
+.our-clients .container{
+    padding-top: 2.50rem;
+}
+.our-clients .container ul{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+/* manage-community */
+
+.manage-community .section-header{
+    display: flex;
+    max-width: 50%;
+    margin-bottom: 20px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.manage-community .section-header h2{
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.manage-community .community-mid-panel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 110px;
+}
+
+.card{
+    background-color: #fff;
+    padding: 1.25rem;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+}
