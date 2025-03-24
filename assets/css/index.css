@@ -87,3 +87,56 @@ header .nav-item:last-child{
     text-align: center;
     flex: 1;
 }
+
+
+.helping-business{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: start; */
+
+    padding: 64px 0;
+
+}
+
+.helping-business .container{
+    gap: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.helping-business .left-panel h2 span{
+    display: block;
+}
+.helping-business .left-panel p{
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.helping-business .right-panel ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 40px;
+    padding-top: 64px;
+    list-style: none;
+}
+
+.helping-business .right-panel ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 28px;
+    
+}
+
+.helping-business .right-panel ul li span{
+    display: block;
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.helping-business .right-panel ul li img{
+    width: 40px;
+    height: 0px;
+}
